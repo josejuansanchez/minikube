@@ -6,7 +6,7 @@
 sudo ./install_all.sh
 ```
 
-Este script instalará Minikube, Docker y las dependencias necesarias.
+Este script instalará [Minikube][1], [Docker][2] y las dependencias necesarias.
 
 **Paso 2.** Ejecuta el script `start_minikube_driver_docker.sh` con tu usuario:
 
@@ -14,4 +14,12 @@ Este script instalará Minikube, Docker y las dependencias necesarias.
 start_minikube_driver_docker.sh
 ```
 
-Este script iniciará Minikube con el driver `docker` y habilitará el addon de `ingress`.
+Este script iniciará [Minikube][1] con el driver [`docker`][3] y habilitará el addon de `ingress`.
+
+## Referencias
+
+- [Minikube Docker driver][3]
+
+[1]: https://minikube.sigs.k8s.io/docs/
+[2]: https://www.docker.com/
+[3]: https://minikube.sigs.k8s.io/docs/drivers/docker/
