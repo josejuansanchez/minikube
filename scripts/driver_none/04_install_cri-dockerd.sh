@@ -22,4 +22,5 @@ systemctl enable cri-docker.service
 systemctl enable --now cri-docker.socket
 
 # Eliminamos el directorio que hemos clonado
+cd ..
 rm -rf cri-dockerd
