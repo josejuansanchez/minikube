@@ -18,7 +18,7 @@ echo \
 apt-get update
 
 # Instalamos docker engine, docker cli y containerd
-apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Iniciamos el servicio de Docker
 systemctl start docker

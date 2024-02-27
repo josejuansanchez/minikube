@@ -7,6 +7,7 @@ apt install golang-go -y
 
 # Instalamos cri-dockerd
 apt install git -y
+rm -rf cri-dockerd
 git clone https://github.com/Mirantis/cri-dockerd.git
 
 cd cri-dockerd
