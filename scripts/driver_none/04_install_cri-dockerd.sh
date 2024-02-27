@@ -7,6 +7,7 @@ apt install golang-go -y
 
 # Instalamos cri-dockerd
 apt install git -y
+rm -rf cri-dockerd
 git clone https://github.com/Mirantis/cri-dockerd.git
 
 cd cri-dockerd
@@ -21,4 +22,5 @@ systemctl enable cri-docker.service
 systemctl enable --now cri-docker.socket
 
 # Eliminamos el directorio que hemos clonado
+cd ..
 rm -rf cri-dockerd
