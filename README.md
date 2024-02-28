@@ -15,12 +15,8 @@ En este repositorio puede encontrar los scripts para deplegar [minikube][1] util
 - [Docker](./scripts/driver_docker/) - contenedor.
 - [None](./scripts/driver_none/) - bare-metal
 
-
 > [!NOTE]
-> Los scripts sólo han sido testeados en **Ubuntu Server 23.04**, por lo tanto, si utiliza una versión diferente y desea realizar la instalación de [minikube][1] en bare-metal con el driver [None](./scripts/driver_none/) tendrá que actualizar la versión de `crictl` y `cni-plugins-linux` en los scripts:
-> - [`scripts/driver_none/03_install_crictl.sh`](./scripts/driver_none/03_install_crictl.sh)
-> - [`scripts/driver_none/05_install_containernetworking-plugins.sh`](./scripts/driver_none/05_install_containernetworking-plugins.sh)
-
+> Los scripts han sido testeados en **Ubuntu Server 22.04 y 23.04**.
 
 ## Referencias
 
