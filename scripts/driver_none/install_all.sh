@@ -7,6 +7,7 @@ set -ex
 ./03_install_crictl.sh
 ./04_install_cri-dockerd.sh
 ./05_install_containernetworking-plugins.sh
-./06_install_helm.sh
-./07_install_kubectl.sh
-./08_install_bash_completion.sh
+./06_install_socat.sh
+./07_install_helm.sh
+./08_install_kubectl.sh
+./09_install_bash_completion.sh
