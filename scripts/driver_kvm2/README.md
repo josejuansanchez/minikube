@@ -1,6 +1,8 @@
 # Scripts necesarios para utilizar Minikube con el driver `kvm2`
 
-**Paso 1.** Ejecuta el script `install_all.sh` como `root`:
+## Paso 1. Instalación
+
+Ejecuta el script `install_all.sh` **como `root`**:
 
 ```bash
 sudo ./install_all.sh
@@ -11,10 +13,12 @@ Este script instalará [Minikube][1], [KVM][2], `kubectl`, `helm` y `bash_comple
 > [!NOTE]
 > Durante la instalación se añadirá su usuario al grupo `docker` para que pueda ejecutar comandos `docker` sin utilizar `sudo`. Para que se apliquen los cambios puede cerrar la shell actual y volver a abrir una nueva, o ejecutar el comando `newgrp docker`.
 
-**Paso 2.** Ejecuta el script `start_minikube_driver_kvm2.sh` con tu usuario **sin utilizar `sudo`**:
+## Paso 2. Iniciamos Minikube
+
+Ejecuta el script `start_minikube_driver_kvm2.sh` con tu usuario **sin utilizar `sudo`**:
 
 ```bash
-start_minikube_driver_kvm2.sh
+./start_minikube_driver_kvm2.sh
 ```
 
 Este script iniciará [Minikube][1] con el driver [`kvm2`][3] y habilitará el addon de `ingress`.

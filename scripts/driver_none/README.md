@@ -23,16 +23,6 @@ Ejecuta el script `start_minikube_driver_none.sh` con tu usuario **sin utilizar 
 
 Este script iniciará [Minikube][1] con el driver [`none`][3] y habilitará el addon de `ingress`.
 
-## Paso 3. Configuración del autocompletado
-
-Ejecuta el script `config_bashrc.sh` con tu usuario **sin utilizar `sudo`**:
-
-```bash
-./config_bashrc.sh
-```
-
-Este script configura el autocompletado de los comandos de `kubectl` y `minikube` en su archivo `~/.bashrc`.
-
 ## Referencias
 
 - [Minikube Docker driver][3]
