@@ -2,10 +2,16 @@
 set -ex
 
 # Instalamos Go
-apt update
-apt install golang-go -y
+#apt update
+#apt install golang-go -y
+VERSION="1.22.0" # check latest version
+wget https://go.dev/dl/go$VERSION.linux-amd64.tar.gz 
+tar -xvf go1.22.0.linux-amd64.tar.gz -C /usr/local
+export PATH=$PATH:/usr/local/go/bin
+rm -rf go$VERSION.linux-amd64.tar.gz
 
 # Instalamos cri-dockerd
+apt update
 apt install git -y
 rm -rf cri-dockerd
 git clone https://github.com/Mirantis/cri-dockerd.git
