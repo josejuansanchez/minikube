@@ -10,10 +10,12 @@ sudo ./install_all.sh
 
 Este script instalará [Minikube][1], [KVM][2], `kubectl`, `helm` y `bash_completion`.
 
+## Paso 2.
+
 > [!NOTE]
 > Durante la instalación se añadirá su usuario al grupo `docker` para que pueda ejecutar comandos `docker` sin utilizar `sudo`. Para que se apliquen los cambios puede cerrar la shell actual y volver a abrir una nueva, o ejecutar el comando `newgrp docker`.
 
-## Paso 2. Iniciamos Minikube
+## Paso 3. Iniciamos Minikube
 
 Ejecuta el script `start_minikube_driver_kvm2.sh` con tu usuario **sin utilizar `sudo`**:
 
